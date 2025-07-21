@@ -11,7 +11,7 @@ body, html {
     display: flex;
     flex-direction: column;
     background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)),
-                url('images/project.JPG') no-repeat center center fixed;
+                url('project.JPG') no-repeat center center fixed;
     background-size: cover;
 }
 
