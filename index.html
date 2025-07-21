@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickTicket - Book Your Journey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>QuickTicket - Book Your Journey Across India!</h1>
+    </header>
+
+    <main>
+        <form id="bookingForm">
+            <label>Contact Number:</label>
+            <input type="tel" name="contact" pattern="\d{10}" required>
+
+            <label>Email ID:</label>
+            <input type="email" name="email" required>
+
+            <div id="passengerDetails">
+                <div class="passenger-group">
+                    <label>Passenger 1 Name:</label>
+                    <input type="text" name="passengerName" required>
+
+                    <label>Passenger 1 Age:</label>
+                    <input type="number" name="passengerAge" min="0" required>
+                </div>
+            </div>
+            <button type="button" id="addPassengerBtn">Add Passenger</button>
+
+            <label>Mode of Transport:</label>
+            <select name="mode" required>
+                <option value="">--Select--</option>
+                <option value="Bus">🚌 Bus</option>
+                <option value="Train">🚆 Train</option>
+                <option value="Flight">✈️ Flight</option>
+            </select>
+
+            <label>Source City:</label>
+            <select name="source" required>
+                <option>Mumbai</option>
+                <option>Delhi</option>
+                <option>Kolkata</option>
+                <option>Chennai</option>
+                <option>Bangalore</option>
+                <option>Hyderabad</option>
+                <option>Pune</option>
+                <option>Ahmedabad</option>
+                <option>Jaipur</option>
+                <option>Lucknow</option>
+                <option>Indore</option>
+                <option>Bhopal</option>
+                <option>Patna</option>
+                <option>Surat</option>
+            </select>
+
+
+            <label>Destination City:</label>
+            <select name="destination" required>
+                <option>Mumbai</option>
+                <option>Delhi</option>
+                <option>Kolkata</option>
+                <option>Chennai</option>
+                <option>Bangalore</option>
+                <option>Hyderabad</option>
+                <option>Pune</option>
+                <option>Ahmedabad</option>
+                <option>Jaipur</option>
+                <option>Lucknow</option>
+                <option>Indore</option>
+                <option>Bhopal</option>
+                <option>Patna</option>
+                <option>Surat</option>
+            </select>
+
+            <label>Travel Date:</label>
+            <input type="date" name="date" required>
+
+            <label>Time Slot:</label>
+            <select name="time">
+                <option>06:00 AM</option>
+                <option>09:00 AM</option>
+                <option>12:00 PM</option>
+                <option>03:00 PM</option>
+                <option>06:00 PM</option>
+                <option>09:00 PM</option>
+            </select>
+
+            <button type="submit">Proceed to Seat Selection & Payment</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>✨ Thank you for choosing QuickTicket! ✨</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

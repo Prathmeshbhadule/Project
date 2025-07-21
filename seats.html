@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Select Seats - QuickTicket</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .seat-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 60px);
+      gap: 12px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .seat {
+      width: 60px;
+      height: 60px;
+      background-color: #eee;
+      border: 2px solid #999;
+      text-align: center;
+      line-height: 60px;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    .seat.selected {
+      background-color: #28a745;
+      color: white;
+      border-color: #218838;
+    }
+
+    .seat.occupied {
+      background-color: #999;
+      cursor: not-allowed;
+    }
+
+    #info {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    #proceedBtn {
+      display: block;
+      margin: 30px auto;
+      padding: 14px 28px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Select Your Seats</h1>
+  </header>
+
+  <main>
+    <div class="seat-grid" id="seatGrid"></div>
+    <div id="info"></div>
+    <button id="proceedBtn">Confirm Seats & Proceed to Payment</button>
+  </main>
+
+  <footer>
+    <p>Choose your preferred seats to travel comfortably!</p>
+  </footer>
+
+  <script src="seats.js"></script>
+</body>
+</html>
